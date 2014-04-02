@@ -1,0 +1,348 @@
+/*!
+Theme Name: Tuts Bower
+Theme URI: http://code.tutsplus.com/
+Version: 1.0.0
+Description: Example project for tutorial on Bower for Tuts+
+Author: Jason Bradley
+Author URI: http://jasonbradley.me
+License: GNU General Public License v3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+*/
+
+// Import Bootstrap styles
+@import 'bootstrap';
+
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #555;
+    word-break: break-word;
+}
+
+h1, .h1,
+h2, .h2,
+h3, .h3,
+h4, .h4,
+h5, .h5,
+h6, .h6 {
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;;
+    font-weight: normal;
+    color: #333;
+    margin-top: 0;
+}
+
+// Override Bootstrap's default container.
+@media (min-width: 1200px) {
+    .container {
+        width: 970px;
+    }
+}
+
+
+// Masthead for nav
+
+.blog-masthead {
+    background-color: #428bca;
+    box-shadow: inset 0 -2px 5px rgba(0,0,0,.1);
+}
+
+// Nav links
+
+.blog-nav > li {
+    position: relative;
+    display: inline-block;
+    padding: 10px;
+
+    a {
+        font-weight: 500;
+        color: #cdddeb;
+
+        &:hover,
+        &:focus {
+            color: #fff;
+            text-decoration: none;
+        }
+    }
+}
+
+// Active state gets a caret at the bottom
+
+.blog-nav .current-menu-item {
+    @media (min-width: 480px) {
+        &:after {
+            color: #fff;
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            display: block;
+            content: " ";
+            width: 0;
+            height: 0;
+            margin-left: -5px;
+            vertical-align: middle;
+            border-right:  5px solid transparent;
+            border-left:   5px solid transparent;
+            border-bottom: 5px solid;
+        }
+    }
+
+    a {
+        color: #fff;
+    }
+}
+
+// Blog name and description
+
+.blog-header {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.blog-title {
+    margin-top: 30px;
+    margin-bottom: 0;
+    font-size: 60px;
+    font-weight: normal;
+
+    a {
+        color: #333;
+
+        &:hover {
+            color: #555;
+            text-decoration: none;
+        }
+
+    }
+}
+
+.blog-description {
+    font-size: 20px;
+    color: #999;
+}
+
+// Main column and sidebar layout
+
+.blog-main {
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+.archive-page-title {
+    margin-bottom: 20px;
+}
+
+// Blog posts
+
+.blog-post {
+    margin-bottom: 60px;
+}
+
+.blog-post-title {
+    margin-bottom: 5px;
+    font-size: 40px;
+
+    a {
+        color: #333;
+
+        &:hover {
+            color: #555;
+            text-decoration: none;
+        }
+    }
+}
+
+.blog-post-meta {
+    margin-bottom: 20px;
+    color: #999;
+}
+
+.blog-content {
+    margin-top: 20px;
+
+    p {
+        margin-bottom: 20px;
+    }
+}
+
+.blog-post-footer {
+    margin-top: 20px;
+
+    a {
+        display: inline;
+        padding: .2em .6em .3em;
+        font-size: 75%;
+        font-weight: bold;
+        line-height: 1;
+        color: #fff;
+        text-align: center;
+        white-space: nowrap;
+        vertical-align: baseline;
+        border-radius: .25em;
+
+        @include label-variant($brand-primary);
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+}
+
+.comments {
+    margin-bottom: 20px;
+
+    li {
+        margin: 10px 0;
+
+        &.bypostauthor {
+            background: #f5f5f5;
+            padding: 10px;
+            border-radius: 4px;
+        }
+    }
+}
+
+.children {
+    list-style: none;
+}
+
+.comment-form {
+    padding: 10px 0;
+
+    .btn.btn-link {
+        margin-bottom: 2px;
+        padding: 0;
+
+        &:focus {
+            outline: none;
+        }
+    }
+}
+
+.alignnone {
+    max-width: 100%;
+}
+
+// Sidebar modules for boxing content
+
+.widget {
+    padding: 15px;
+    margin: 0 -15px 15px;
+
+    &.widget_text {
+        background-color: #f5f5f5;
+        border-radius: 4px;
+
+        p:last-child,
+        ul:last-child,
+        ol:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    &.widget_search,
+    &.widget_calendar {
+        padding: 0;
+    }
+
+    ul, ol {
+        padding-left: 0;
+        list-style: none;
+    }
+}
+
+// Pagination
+.pager {
+    margin-bottom: 60px;
+    text-align: left;
+
+    > li > a {
+        width: 142px;
+        padding: 10px 20px;
+        text-align: center;
+        border-radius: 30px;
+    }
+}
+
+// Footer
+
+.blog-footer {
+    padding: 40px 0;
+    color: #999;
+    text-align: center;
+    background-color: #f9f9f9;
+    border-top: 1px solid #e5e5e5;
+}
+
+.alignleft {
+    float: left;
+    margin: 0.5em 1em 0.5em 0;
+}
+
+.alignright {
+    float: right;
+    margin: 0.5em 0 0.5em 1em;
+}
+
+.aligncenter {
+    display: block;
+    float: none;
+    margin: 0.5em auto !important;
+}
+
+.alignnone {
+    margin: 0.5em 0;
+}
+
+.wp-caption-text {
+    background: #f5f5f5;
+    padding: 10px;
+}
+
+.form-group label {
+    display: block;
+}
+
+input[type="submit"]     {
+    display: inline-block;
+    margin-bottom: 0; // For input.btn
+    font-weight: $btn-font-weight;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    background-image: none; // Reset unusual Firefox-on-Android default style; see https://github.com/necolas/normalize.css/issues/214
+    border: 1px solid transparent;
+    white-space: nowrap;
+    @include button-size($padding-large-vertical, $padding-large-horizontal, $font-size-large, $line-height-large, $border-radius-large);
+    @include user-select(none);
+
+    &,
+    &:active,
+    &.active {
+        &:focus {
+            @include tab-focus();
+        }
+    }
+
+    &:hover,
+    &:focus {
+        color: $btn-default-color;
+        text-decoration: none;
+    }
+
+    &:active,
+    &.active {
+        outline: 0;
+        background-image: none;
+        @include box-shadow(inset 0 3px 5px rgba(0,0,0,.125));
+    }
+
+    &.disabled,
+    &[disabled],
+    fieldset[disabled] & {
+        cursor: not-allowed;
+        pointer-events: none; // Future-proof disabling of clicks
+        @include opacity(.65);
+        @include box-shadow(none);
+    }
+
+    @include button-variant($btn-primary-color, $btn-primary-bg, $btn-primary-border);
+}
