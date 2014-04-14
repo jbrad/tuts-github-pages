@@ -1,6 +1,6 @@
 {
-  "name": "tuts-bower",
-  "description": "Example project for tutorial on Bower for Tuts+",
+  "name": "tuts-github-pages",
+  "description": "Example project for tutorial on GitHub Pages for Tuts+",
   "version": "1.0.0",
   "dependencies": {
     "bootstrap-sass-official": "*"

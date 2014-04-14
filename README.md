@@ -1,7 +1,7 @@
-tuts-bower
+tuts-github-pages
 ==========
 
-This project is used as an example for a series on [Bower](http://bower.io) for [Tuts +](http://code.tutsplus.com/). 
+This project is used as an example for a series on [GitHub Pages](https://pages.github.com/) for [Tuts +](http://code.tutsplus.com/). 
 
 It is a basic WordPress theme that could be used, but is not supported.
 
