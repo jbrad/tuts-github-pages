@@ -10,3 +10,7 @@ To compile this project, please run the following:
 * `npm install`
 * `bower install`
 * `grunt`
+
+To view the documentation, please run the following:
+
+* `jekyll serve`
