@@ -1,0 +1,16 @@
+# Dependencies
+markdown:         rdiscount
+pygments:         true
+
+# Permalinks
+permalink:        pretty
+
+# Server
+destination:      _gh_pages
+host:             0.0.0.0
+port:             9001
+baseurl:          /
+encoding:         UTF-8
+
+# Custom vars
+repo:             https://github.com/jbrad/tuts-github-pages
