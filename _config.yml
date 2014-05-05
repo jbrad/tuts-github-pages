@@ -5,11 +5,15 @@ pygments:         true
 # Permalinks
 permalink:        pretty
 
+# Excludes
+exclude:          [js/dev, css, node_modules, README.md, bower.json, Gruntfile.js, comments.php, footer.php, functions.php, header.php, index.php, loop.php, package.json, page.php, pagination.php, sidebar.php, single.php]
+
 # Server
 destination:      _gh_pages
 host:             0.0.0.0
 port:             9001
 baseurl:          /
+url:              http://jbrad.github.io/tuts-github-pages
 encoding:         UTF-8
 
 # Custom vars
